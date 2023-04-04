@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="week8valentine.css">
+        <title>Valentines Flowers - Order your flowers online</title>
+        <script href="week8valentines.js"> </script>
+    </head>
+<body>
+<h1>Valentines Flowers</h1>
+<div class="container">
+<div class="product"  id="first"> 
+<img src="white.jpeg" alt="White Bouquet" id="whiteimg">
+<div class="description"><p>White Bouquet</p><div class="price">£<span id="price1">20</span></div></div>
+
+</div>
+
+
+<div class="product" id="second">
+<img src="pink.jpeg" alt="Pink Bouquet" id="pinkimg" >
+<div class="description"><p>Pink Bouquet</p><div class="price">£<span id="price2">20</span></div></div>
+</div>
+
+
+<div class="product" id="third">
+<img src="red.jpeg" alt="Red Bouquet" id="redimg">
+<div class="description"><p>Red Bouquet</p><div class="price">£<span id="price3">20</span></div></div>
+
+</div>
+
+<div class="labelOrder">Your Order:<div
+    id="orderDescription"></div><div class="product"
+    id="order"></div></div>
+
+
+<form>
+<select onchange="CheckOptions(this.form)" class="bouquetOptions" name="bouquetOptions" id="bouquetOptions" >
+    <option value=pleaseSelect>Please Select an option</option>
+    <option value=withChampagne>With Champagne</option>
+    <option value=extra>Extra</option>
+    <option value=extraWithChampagne>Extra With Champagne</option>
+    <p>"Bouquet Color:"</p>
+    <input type="radio" id="white" name="color" value="white" onchange="displayBouquet(this.value)">
+  <label for="white">White</label >
+  <input type="radio" id="pink" name="color" value="pink" onchange="displayBouquet(this.value)">
+  <label for="pink">Pink</label>
+  <input type="radio" id="red" name="color" value="red" onchange="displayBouquet(this.value)">
+  <label for="red">Red</label>
+
+<input type="button" value="Place Your Order">
+<input type="reset" value="Reset Selection">
+
+</form>
+</div>
+
+<script href="week8valentines.js"> </script>
+
+
+
+
+</body>
